@@ -59,14 +59,9 @@ public abstract class TestSupport {
     /**
      * 将java对象转换成JSON字符串并输出
      * @param o 要
-     * @return
      * @throws IOException
      */
-    protected void writeValueAsString(Object o) {
-        try {
-            logger.info( mapper.writeValueAsString(o));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void writeValueAsString(Object o) throws IOException {
+        logger.info( mapper.writeValueAsString(o));
     }
 }

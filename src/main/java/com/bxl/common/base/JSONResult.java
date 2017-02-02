@@ -8,7 +8,7 @@
  * Copyright © https://github.com/CharlotteBao
  * All rights reserved.
  */
-package com.bxl.commons.base;
+package com.bxl.common.base;
 
 /**
  * Response JSONResult for RESTful,封装返回JSON格式的数据.

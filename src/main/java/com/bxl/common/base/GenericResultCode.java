@@ -1,6 +1,6 @@
-package com.bxl.commons.base;
+package com.bxl.common.base;
 
-import com.bxl.commons.generic.GenericEnum;
+import com.bxl.common.generic.GenericEnum;
 
 /**
  * 操作结果码

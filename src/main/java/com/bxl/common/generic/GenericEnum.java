@@ -8,7 +8,7 @@
  * Copyright © https://github.com/CharlotteBao
  * All rights reserved.
  */
-package com.bxl.commons.generic;
+package com.bxl.common.generic;
 
 import java.io.Serializable;
 

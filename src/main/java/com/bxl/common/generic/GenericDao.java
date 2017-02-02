@@ -8,7 +8,7 @@
  * Copyright © https://github.com/CharlotteBao
  * All rights reserved.
  */
-package com.bxl.commons.generic;
+package com.bxl.common.generic;
 
 /**
  * 所有自定义Dao的顶级接口, 封装常用的增删查改操作.

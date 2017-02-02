@@ -3,4 +3,4 @@
  *
  * @since 1.0.0
  */
-package com.bxl.commons.generic;
+package com.bxl.common.generic;

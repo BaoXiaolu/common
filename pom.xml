@@ -12,6 +12,8 @@
 
     <properties>
 
+        <maven.test.skip>true</maven.test.skip>
+
         <junit.version>4.12</junit.version>
         <commons.codec.version>1.10</commons.codec.version>
         <jackson.version>1.9.13</jackson.version>

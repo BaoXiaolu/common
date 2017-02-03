@@ -12,8 +12,15 @@
 
     <properties>
 
+        <!-- base setting -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.jdk>1.8</project.build.jdk>
         <maven.test.skip>true</maven.test.skip>
 
+        <!-- plugin versions -->
+        <plugin.maven-compiler>3.1</plugin.maven-compiler>
+
+        <!-- lib versions -->
         <junit.version>4.12</junit.version>
         <commons.codec.version>1.10</commons.codec.version>
         <jackson.version>1.9.13</jackson.version>
@@ -69,12 +76,15 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Maven插件 配置 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${plugin.maven-compiler}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${project.build.jdk}</source>
+                    <target>${project.build.jdk}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
         </plugins>

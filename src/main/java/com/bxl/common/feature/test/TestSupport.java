@@ -21,7 +21,7 @@ import java.util.logging.Logger;
  * @since 1.0.0
  */
 public abstract class TestSupport {
-    protected Logger logger= Logger.getLogger(this.getClass().getName());
+    protected Logger logger = Logger.getLogger(this.getClass().getName());
     private ObjectMapper mapper = new ObjectMapper();
 
     protected long startTime;

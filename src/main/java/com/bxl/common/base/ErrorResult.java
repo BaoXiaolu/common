@@ -33,6 +33,16 @@ public class ErrorResult extends Result {
     }
 
     public ErrorResult() {
+        setSuccess(false);
+    }
 
+    /**
+     * 失败并返回错误消息
+     *
+     * @param errors 错误消息列表
+     */
+    public ErrorResult(Map<String, Object> errors) {
+        setSuccess(false);
+        this.errors = errors;
     }
 }

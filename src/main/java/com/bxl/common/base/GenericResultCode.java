@@ -46,6 +46,11 @@ public final class GenericResultCode extends GenericEnum<Integer>{
     public final static GenericResultCode ILLEGALOPERATION = new GenericResultCode("IllegalOperation", 7, "非法操作");
 
     /**
+     * 操作没有引发任何变化，提交取消
+     */
+    public final static GenericResultCode NOCHANGED = new GenericResultCode("NoChanged", 8, "操作没有引发任何变化，提交取消操作没有引发任何变化，提交取消");
+
+    /**
      *
      * @param text 枚举文本
      * @param value 枚举值

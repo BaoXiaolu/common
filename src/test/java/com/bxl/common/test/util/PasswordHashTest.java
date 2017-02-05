@@ -8,7 +8,7 @@
  * Copyright © https://github.com/CharlotteBao
  * All rights reserved.
  */
-package com.bxl.common.util.test;
+package com.bxl.common.test.util;
 
 import com.bxl.common.feature.test.TestSupport;
 import com.bxl.common.util.PasswordHash;

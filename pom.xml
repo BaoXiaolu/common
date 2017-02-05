@@ -6,7 +6,7 @@
 
     <groupId>com.bxl</groupId>
     <artifactId>bxl-common</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <url>https://github.com/CharlotteBao/common.git</url>
 

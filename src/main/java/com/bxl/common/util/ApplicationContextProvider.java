@@ -15,8 +15,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 /**
- * Spring 上下文提供者
+ * Spring 上下文提供者.
+ * 提供手动从Spring上下文中获取Bean的支持.
  * <br>
+ *     how to define:
+ *     <pre>
+ *         <bean class="com.bxl.common.util.ApplicationContextProvider"  lazy-init="false" />
+ *     </pre>
+ *     <br>
  *     how to use:
  *     <pre>
  *         TestBean tb = ApplicationContextProvider.getApplicationContext().getBean(TestBean.class);
@@ -28,10 +34,18 @@ public class ApplicationContextProvider implements ApplicationContextAware {
 
     private static ApplicationContext context;
 
-    public static ApplicationContext getApplicationContext() { return context; }
+    public static ApplicationContext getApplicationContext() {
+        checkApplicationContext();
+        return context;
+    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        context = applicationContext;
+    }
 
+    private static void checkApplicationContext() {
+        if (context == null)
+            throw new IllegalStateException("applicaitonContext未注入,请在applicationContext.xml中定义ApplicationContextProvider");
     }
 }

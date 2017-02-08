@@ -20,7 +20,7 @@ import org.springframework.context.ApplicationContextAware;
  * <br>
  *     how to define:
  *     <pre>
- *         <bean class="com.bxl.common.util.ApplicationContextProvider"  lazy-init="false" />
+ *         &lt;bean class="com.bxl.common.util.ApplicationContextProvider"  lazy-init="false" /&gt;
  *     </pre>
  *     <br>
  *     how to use:
@@ -40,7 +40,7 @@ public class ApplicationContextProvider implements ApplicationContextAware {
     }
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    public void setApplicationContext(ApplicationContext applicationContext) {
         context = applicationContext;
     }
 
